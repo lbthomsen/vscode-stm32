@@ -6,7 +6,7 @@
   ******************************************************************************
   * @attention
   *
-  * Copyright (c) 2022 STMicroelectronics.
+  * Copyright (c) 2022 Lars Boegild Thomsen <lbthomsen@gmail.com>
   * All rights reserved.
   *
   * This software is licensed under terms that can be found in the LICENSE file
@@ -110,12 +110,11 @@ int main(void)
 
   uint32_t now = 0, last_blink = 0, last_print = 0;
 
-  while (1)
-  {
+  for (;;) {
 
     now = HAL_GetTick();
 
-    if (now - last_blink >= 500) { // Every half second or 500 ms
+    if (now - last_blink >= 200) { // Every half second or 500 ms
 
       HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
 

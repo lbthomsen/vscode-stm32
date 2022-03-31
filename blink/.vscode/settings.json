@@ -1,4 +1,10 @@
 {
     "cortex-debug.gdbPath": "gdb-multiarch", 
-    "makefile.extensionOutputFolder": "./.vscode"
+    "makefile.extensionOutputFolder": "./.vscode",
+    "files.associations": {
+        "*.js": "javascript",
+        "main.h": "c",
+        "stdio.h": "c"
+    },
+    "C_Cpp.default.configurationProvider": "ms-vscode.makefile-tools"
 }
